@@ -1,0 +1,18 @@
+@mixin row-flex-box-centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin column-flex-box-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin top-navbar-and-content {
+    width: calc(100% - 350px);
+    height: 100%;
+}

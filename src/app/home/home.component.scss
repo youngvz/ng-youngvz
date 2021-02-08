@@ -1,0 +1,19 @@
+@use "../../stylesheets/_mediaQueries" as mediaQueries;
+
+.page-wrapper {
+    background-color: coral;
+    height: 100%;
+    width: 100%;
+
+    .landing-wrapper {
+        height: 40vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mediaQueries.phone-screen {
+            height: 60vh;
+        }
+    }
+}
