@@ -61,6 +61,12 @@
                 text-align: center;
                 opacity: 0.7;
                 height: inherit;
+
+                -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 3s; /* Firefox < 16 */
+                -ms-animation: fadein 3s; /* Internet Explorer */
+                -o-animation: fadein 3s; /* Opera < 12.1 */
+                animation: fadein 3s;
             }
 
             .subtitle {
@@ -223,9 +229,124 @@
                     font-size: 1.2rem;
                 }
             }
+        }
+    }
+
+    .explore-wrapper {
+        padding: 24px 0;
+        background-color: constants.$vapor_wave_turqouise;
+
+        .description {
+            margin: 0 10%;
+            font-family: 'Roboto', monospace;
+            font-weight: 600;
+
+            .title {
+                margin: 0;
+                font-size: 2.5rem;
+
+                @include mediaQueries.phone-screen {
+                    font-size: 1.5rem;
+                }
+            }
             
+            .subtitle {
+                font-family: 'Roboto Mono', monospace;
+                font-size: 1.8rem;
+                font-weight: 800;
+
+                @include mediaQueries.phone-screen {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .post-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 10%;
+            padding: 12px 0;
+
+            @include mediaQueries.phone-screen {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                margin: 0 10%;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+                width: calc(50% - 72px);
+                margin-right: 36px;
+                margin-bottom: 36px;
+
+                @include mediaQueries.phone-screen {
+                    width: 100%;
+                }
+
+                .post {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    border-radius: 12px;
+                    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+                    img {
+                        height: 300px;
+                        border-radius: 12px 12px 0 0;
+                        object-fit: fill;
+
+                        @include mediaQueries.phone-screen {
+                            height: 200px;
+                        }
+                    }
+
+                    .title {
+                        margin: 5% 5% 0 5%;
+                        font-family: 'Roboto';
+                        font-size: 1.5rem;
+                    }
+
+                    .subtitle {
+                        margin: 5%;
+                        font-family: 'Roboto Mono', monospace;
+                        font-weight: 800;
+                    }
+                }
+            }
 
             
+        }
+    }
+
+    .connect-wrapper {
+        padding: 24px 0;
+        background-color: constants.$vapor_wave_pink;
+
+        .description {
+            margin: 0 10%;
+            font-family: 'Roboto', monospace;
+            font-weight: 600;
+
+            .title {
+                margin: 0;
+                font-size: 2.5rem;
+
+                @include mediaQueries.phone-screen {
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .subtitle {
+                font-family: 'Roboto Mono', monospace;
+                font-size: 1.8rem;
+                font-weight: 800;
+
+                @include mediaQueries.phone-screen {
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 
@@ -248,4 +369,34 @@
         }
         
     }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.7; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.7; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.7; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.7; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.7; }
 }
