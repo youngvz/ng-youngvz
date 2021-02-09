@@ -136,7 +136,7 @@
 
         .description {
             margin: 0 10%;
-            font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto', monospace;
             font-weight: 600;
 
             .title {
@@ -148,6 +148,7 @@
             }
             
             .subtitle {
+                font-family: 'Roboto Mono', monospace;
                 font-size: 1.8rem;
                 font-weight: 800;
 
