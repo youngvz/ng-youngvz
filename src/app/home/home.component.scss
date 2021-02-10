@@ -289,6 +289,10 @@
         height: 250px;
         width: 100%;
 
+        @include mediaQueries.phone-screen {
+            height: 150px;
+        }
+
         .sign-wrapper {
             position: absolute;
             width: 100%;
@@ -298,6 +302,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mediaQueries.phone-screen {
+                height: 150px;
+            }
+
 
             .sign {
                 text-align: center;
@@ -310,7 +319,13 @@
                 font: 400 5rem "Vibur";
                 color: #fee;
                 text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+
+                @include mediaQueries.phone-screen {
+                    font: 400 3rem "Vibur";
+                }
+
               }
+              
               .sign b span{
                 animation: blink linear infinite 2s;
               }
@@ -464,32 +479,32 @@
         }
     
         .cloud-1 {
-            @include animation-duration(263s);
+            @include animation-duration(50s);
             margin-left: 20%;
         }
     
         .cloud-2 {
-            @include animation-duration(99s);
+            @include animation-duration(50s);
             margin-left: 90%;
         }
     
         .cloud-3 {
-            @include animation-duration(142s);
+            @include animation-duration(70s);
             margin-left: 50%;
         }
     
         .cloud-4 {
-            @include animation-duration(152s);
+            @include animation-duration(60s);
             margin-left: 43%;
         }
     
         .cloud-5 {
-            @include animation-duration(215s);
+            @include animation-duration(80s);
             margin-left: 83%;
         }
     
         .cloud-6 {
-            @include animation-duration(139s);
+            @include animation-duration(70s);
             margin-left: 73%;
         }
     }
@@ -640,6 +655,7 @@
     .connect-wrapper {
         padding: 24px 0;
         background-color: constants.$vapor_wave_pink;
+        background-image: linear-gradient( 140deg , constants.$vapor_wave_pink 0%,  constants.$vapor_wave_purple 80%);
 
         .description {
             margin: 0 10%;
@@ -757,14 +773,14 @@
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
  }
  
- @media (max-width: 768px) {
-     .woocommerce ul.products li.product, 
-     .woocommerce-page ul.products li.product, 
-     .woocommerce-page[class*=columns-] ul.products li.product,
-     .woocommerce[class*=columns-] ul.products li.product {
-         width: 100%;
-         float: left;
-         clear: both;
-         margin: 0 7em;
-     }
- }
+//  @media (max-width: 768px) {
+//      .woocommerce ul.products li.product, 
+//      .woocommerce-page ul.products li.product, 
+//      .woocommerce-page[class*=columns-] ul.products li.product,
+//      .woocommerce[class*=columns-] ul.products li.product {
+//          width: 100%;
+//          float: left;
+//          clear: both;
+//          margin: 0 7em;
+//      }
+//  }
