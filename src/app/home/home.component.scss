@@ -281,17 +281,16 @@
     }
 
     .cloud-wrapper {
-        background: #6dd3e7;
-        background-image: linear-gradient( 140deg , constants.$vapor_wave_violet 0%, constants.$vapor_wave_purple 25%, constants.$vapor_wave_pink 70%, constants.$vapor_wave_purple 90%);
-        border-bottom: 4px solid white;
+        // background: #6dd3e7;
+        // background-image: linear-gradient( 140deg , constants.$vapor_wave_violet 0%, constants.$vapor_wave_purple 25%, constants.$vapor_wave_pink 70%, constants.$vapor_wave_purple 90%);
+        // border-bottom: 4px solid white;
+
+        background-color: constants.$vapor_wave_turqouise;
+        background-image: linear-gradient( 140deg , constants.$vapor_wave_violet 0%, constants.$vapor_wave_purple 25%, constants.$vapor_wave_pink 60%, constants.$vapor_wave_cyan 70%, constants.$vapor_wave_turqouise 80%);
+
 
         overflow-x: hidden;
-        height: 250px;
         width: 100%;
-
-        @include mediaQueries.phone-screen {
-            height: 250px;
-        }
 
         .sign-wrapper {
             position: absolute;
@@ -507,19 +506,13 @@
             @include animation-duration(70s);
             margin-left: 73%;
         }
-    }
-
-    .explore-wrapper {
-        padding: 24px 0;
-        background-color: constants.$vapor_wave_turqouise;
-        background-image: linear-gradient( 140deg , constants.$vapor_wave_violet 0%, constants.$vapor_wave_purple 25%, constants.$vapor_wave_pink 60%, constants.$vapor_wave_cyan 70%, constants.$vapor_wave_turqouise 80%);
 
         .post-wrapper {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             margin: 0 10%;
-            padding: 12px 0;
+            padding: 24px 0;
             justify-content: space-between;
 
             @include mediaQueries.phone-screen {
