@@ -290,7 +290,7 @@
         width: 100%;
 
         @include mediaQueries.phone-screen {
-            height: 150px;
+            height: 250px;
         }
 
         .sign-wrapper {
@@ -304,7 +304,7 @@
             justify-content: center;
 
             @include mediaQueries.phone-screen {
-                height: 150px;
+                height: 250px;
             }
 
 
@@ -321,7 +321,7 @@
                 text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
 
                 @include mediaQueries.phone-screen {
-                    font: 400 3rem "Vibur";
+                    font: 400 4rem "Vibur";
                 }
 
               }
